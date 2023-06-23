@@ -16,10 +16,10 @@ In this project, we have four layers-
 In our project [ArrayList](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html) and the methods involved with ArrayList, like add method for posting new User, remove method for deleting a user, combination of add and remove method for update user and linear search function for searching a user in Java by specific userId.
 ## Project Summary
 Our project basically maintains the upcoming user information which includes -
-
 * UserId
 * Name
 * UserName
 * Address
 * Phone Number
+
 You can create a user information, read a user information, read by specific id, update userName of specific userId, delete a user by their userId by api calls.
