@@ -13,4 +13,13 @@ In this project, we have four layers-
 * Service -The business layer handles all the business logic. It consists of service classes and uses services provided by data access layers.
 * DataBase Class - Here the class user is defined and the whatever a user class will load. e.g -userId, userName, address, phone number etc.
 ## Data Structure Used In My Project
-In our project [ArrayList](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html) and the methods involved with ArrayList, like add method for posting new User, remove method for deleting a user, combination of add and remove method for update user and linear search function for searching a user in Java by specific userId
+In our project [ArrayList](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html) and the methods involved with ArrayList, like add method for posting new User, remove method for deleting a user, combination of add and remove method for update user and linear search function for searching a user in Java by specific userId.
+## Project Summary
+Our project basically maintains the upcoming user information which includes -
+
+* UserId
+* Name
+* UserName
+* Address
+* Phone Number
+You can create a user information, read a user information, read by specific id, update userName of specific userId, delete a user by their userId by api calls.
