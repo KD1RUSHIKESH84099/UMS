@@ -41,16 +41,16 @@ public class UserService {
         return "removed";
     }
 
-    public String  updateUser(Integer userId) {
 
-        for (UserModel u : userrepo.getUsers()) {
-            if (u.getUserId().equals(userId)) {
-                u.setUserName(u.getUserName());
-                u.setUserAddress(u.getUserAddress());
-                u.setUserPhoneNumber(u.getUserPhoneNumber());
-                return "User updated successfully";
-            }
-        }
-        return "User not found";
+    public String updateUser(Integer userId, UserModel updatedUser) {
+    UserModel user = getUserById(userId);
+    if (user != null) {
+        user.setUserName(updatedUser.getUserName());
+        user.setUserAddress(updatedUser.getUserAddress());
+        user.setUserPhoneNumber(updatedUser.getUserPhoneNumber());
+        return "User updated";
     }
+    return "User not found";
 }
+    }
+

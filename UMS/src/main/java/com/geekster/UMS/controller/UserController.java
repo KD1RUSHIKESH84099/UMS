@@ -33,15 +33,18 @@ public class UserController {
 
 
     }
-    @PutMapping("/updateUserInfo/{userId}")
-    public void  updateUser(@PathVariable Integer userId) {
 
-        userService.updateUser(userId);
-
-
-
-    }
+    @PutMapping("/user/{userId}")
+    public String updateUser(@PathVariable Integer userId, @RequestBody UserModel updatedUser) {
+    return userService.updateUser(userId, updatedUser);
 }
+
+
+
+
+
+}
+
 
 
 
